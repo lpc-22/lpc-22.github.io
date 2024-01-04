@@ -33,17 +33,18 @@ body::-webkit-scrollbar {
 }
 
 .section-container{
-    /* min-height: 60vh; */
+    margin-top: 100px;
+    min-height: 40vh;
 }
 
 .container {
     width: 65%;
-    margin: 55px auto;
+    margin: 50px auto;
     /* border: white 1px solid; TODO:: why the anchor is link to the wrong place*/
 }
 
 .container>h1 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 
     margin-top: 60px;
@@ -96,10 +97,12 @@ header {
 }
 
 .logo {
-    font-size: 18px;
+    font-size: 36px;
+    font-family: 'Great Vibes', cursive;
     font-weight: 900;
     color: #ffffff;
-    text-shadow: -2px -2px 0 var(--main-color), 2px 2px 0 var(--secondary-color);
+    /* text-shadow: -2px -2px 0 var(--main-color), 2px 2px 0 var(--secondary-color); */
+    text-shadow: 1px 1px 1px #000000;
     text-decoration: none;
 }
 
@@ -112,9 +115,10 @@ nav ul {
 
 nav a {
     position: relative;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 800;
     color: #ffffff;
+    text-shadow: #000000 1px 1px 1px;
     text-decoration: none;
 }
 
@@ -432,20 +436,20 @@ main p {
 
 .project-img {
     height: auto;
-    width: 60%;
+    width: 50%;
 }
 
 .project-img>img{
     border-radius: 15px;
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: top;
     max-height: 600px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .8); */
 }
 
 .project-text {
-    width: 35%;
+    width: 50%;
     color: #000000;
 }
 
@@ -559,6 +563,15 @@ main p {
 
 .contact-item p {
     color: #000000;
+    margin: auto 0;
+}
+
+.contact-item a {
+    text-decoration: underline;
+}
+
+.contact-item a:hover{
+    color: var(--main-color);
 }
 
 .contact-links {
